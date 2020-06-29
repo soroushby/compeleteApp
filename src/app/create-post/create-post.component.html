@@ -1,0 +1,15 @@
+<form [formGroup]="postForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="lastName" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="save()">Primary</button>
+</form>
+
+{{ postForm.value | json }}
