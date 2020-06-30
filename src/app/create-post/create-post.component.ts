@@ -9,7 +9,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class CreatePostComponent implements OnInit {
   postForm: any;
-  form;
+  form: any = [];
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
@@ -20,9 +20,12 @@ export class CreatePostComponent implements OnInit {
   }
 
   save() {
-    const form = new post(
-      this.postForm.get('name').value,
-      this.postForm.get('lastname').value
-    );
+    this.form.push(this.postForm.value);
+    // const form = new post(
+    //   this.postForm.get('name').value,
+    //   this.postForm.get('lastname').value
+    // );
+    console.log(this.form);
   }
+  // console.log(this.form.get);
 }
