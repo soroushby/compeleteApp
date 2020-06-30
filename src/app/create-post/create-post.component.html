@@ -1,12 +1,12 @@
-<form [formGroup]="postForm">
-  <mat-form-field appearance="fill">
+<form [formGroup]="postForm" fxLayout="column" fxLayoutAlign="center center">
+  <mat-form-field appearance="fill" class="inputs">
     <mat-label>Name</mat-label>
     <input matInput formControlName="name" />
   </mat-form-field>
 
-  <mat-form-field appearance="fill">
-    <mat-label>Name</mat-label>
-    <input matInput formControlName="lastName" />
+  <mat-form-field appearance="fill" class="inputs">
+    <mat-label> last name</mat-label>
+    <input matInput formControlName="lastName" class="inputs" />
   </mat-form-field>
 
   <button mat-raised-button color="primary" (click)="save()">Primary</button>
