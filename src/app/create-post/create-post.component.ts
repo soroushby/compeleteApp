@@ -20,7 +20,7 @@ export class CreatePostComponent implements OnInit {
   }
 
   save() {
-    this.form.push(this.postForm.value);
+    // this.form.push(this.postForm.value);
     // const form = new post(
     //   this.postForm.get('name').value,
     //   this.postForm.get('lastname').value
